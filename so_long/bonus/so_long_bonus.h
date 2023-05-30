@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long.h                                          :+:      :+:    :+:   */
+/*   so_long_bonus.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mel-mars < mel-mars@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/20 18:22:22 by mel-mars          #+#    #+#             */
-/*   Updated: 2023/01/30 18:13:14 by mel-mars         ###   ########.fr       */
+/*   Updated: 2023/01/30 18:15:14 by mel-mars         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SO_LONG_H
-# define SO_LONG_H
+#ifndef SO_LONG_BONUS_H
+# define SO_LONG_BONUS_H
 
-# include "libft/libft.h"
+# include "../libft/libft.h"
 # include <mlx.h>
 
 typedef struct s_num

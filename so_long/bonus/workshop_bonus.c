@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   workshop.c                                         :+:      :+:    :+:   */
+/*   workshop_bonus.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mel-mars < mel-mars@student.1337.ma>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/20 18:04:10 by mel-mars          #+#    #+#             */
-/*   Updated: 2023/01/31 13:39:01 by mel-mars         ###   ########.fr       */
+/*   Updated: 2023/01/31 13:39:05 by mel-mars         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "so_long_bonus.h"
 
 int	main(int ac, char **av)
 {
@@ -32,6 +32,7 @@ int	main(int ac, char **av)
 	if (!p.win)
 		(ft_printf("Error\nWindows Failed!\n"), exit(-1));
 	put_map(p);
+	mlx_string_put(p.mlx, p.win, 0, 0, 0x00FFFF, "MOVES:");
 	mlx_hook(p.win, 2, 0, key_hook, &p);
 	mlx_hook(p.win, 17, 0, ft_exit, &p);
 	mlx_loop(p.mlx);
